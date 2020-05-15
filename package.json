@@ -1,0 +1,22 @@
+{
+  "name": "unu-game-server",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node src",
+    "dev": "nodemon src",
+    "test": "node test/client"
+  },
+  "author": "llbarbosas",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "node-emoji": "^1.10.0",
+    "redux": "^4.0.5",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
