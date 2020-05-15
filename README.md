@@ -55,4 +55,4 @@ yarn test
 
 ## :memo: Licença
 
-MIT Licence. See the file [LICENSE](LICENSE.md) for more details.
+MIT Licence. See the file [LICENSE](LICENSE) for more details.

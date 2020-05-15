@@ -9,12 +9,25 @@
 </p>
 
 ## :rocket: Objetivos do projeto
+* Praticar aprendizados de websockets utilizando socket.io
+* Praticar aprendizados de containerização/microsserviços com Docker
+* Aprender a fazer deploy de uma aplicação dividida em microsserviços na AWS
+* ~~Não abandonar esse projeto no meio do caminho (:sweat_smile:)~~ Exercitar o projeto e criação de definições de pronto/MVPs dos meus projetos pessoais
 
 ## :pencil: Requisitos
-* [ ] Como usuário
-* [ ] Como usuário
-* [ ] Como usuário
+* [X] Como usuário quero me conectar à um chat utilizando um nome da minha escolha
+  * Nomes não devem ser repetidos
+* [X] Como usuário quero mandar mensagens para meus amigos conectados no chat
+* [X] Como usuário quero utilizar comandos no chat
+  * Outros usuários devem ver o resultado da execução dos comandos
+* [X] Como usuário quero adicionar chatbots às minhas conversas
+* [X] Como usuário quero interagir com chatbots através das mensagens enviadas
+* [X] Como usuário quero jogar com meus amigos através dos chatbots
+
+* [X] Como desenvolvedor quero criar um client para o servidor de chat
+* [X] Como desenvolvedor quero criar um bot para o servidor de chat
 
 ## :construction: Restrições
 * [X] Utilizar websockets (socket.io)
+* [X] Bots devem se conectar com o chat como os usuários (usando canal de mensagens)
 
