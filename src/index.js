@@ -9,6 +9,11 @@ const express = require('express')
 const app = express()
 const server = require('http').createServer(app)
 const chatServer = require('./chat')
+const routes = require('./routes')
+
+app.use(express.json())
+
+app.use('/api', routes)
 
 const chat = chatServer(server)
 
