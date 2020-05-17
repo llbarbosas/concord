@@ -1,5 +1,5 @@
 <h1 align="center">
-  quarentena-chat-server
+  <img alt="Concord" title="Concord" src=".github/concord-logo.png" width="200px" />
 </h1>
 
 <h3 align="center">
@@ -8,13 +8,13 @@
 
 <p align="center">
   <a href="https://github.com/llbarbosas">
-    <img alt="Made by Lucas Barbosa" src="https://img.shields.io/badge/made%20by-llbarbosas-4e5584?style=flat-square">
+    <img alt="Made by Lucas Barbosa" src="https://img.shields.io/badge/made%20by-llbarbosas-7289DA?style=flat-square">
   </a>
 
-  <img alt="License" src="https://img.shields.io/badge/licence-MIT-4e5584?style=flat-square">
+  <img alt="License" src="https://img.shields.io/badge/licence-MIT-7289DA?style=flat-square">
 
   <a href="https://github.com/llbarbosas/quarentena-chat-server/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/llbarbosas/quarentena-chat-server?color=4e5584&style=flat-square">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/llbarbosas/quarentena-chat-server?color=7289DA&style=flat-square">
   </a>
 </p>
 
