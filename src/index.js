@@ -8,14 +8,22 @@ const {
 const express = require('express')
 const app = express()
 const server = require('http').createServer(app)
+
+const { ExpressPeerServer } = require('peer')
+const peerServer = ExpressPeerServer(server, {
+    debug: true
+})
+
 const chatServer = require('./chat')
-const routes = require('./routes')
+const chat = chatServer(server)
+
+const routes = require('./api/routes')
 
 app.use(express.json())
 
 app.use('/api', routes)
 
-const chat = chatServer(server)
+app.use('/peerjs', peerServer)
 
 server.listen(CHAT_PORT, () => {
     console.log(`listening on ${CHAT_HOST}:${CHAT_PORT}`)

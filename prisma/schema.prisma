@@ -1,0 +1,22 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model ChatServer {
+  id       String  @id
+  name     String
+  password String?
+}
+
+model User {
+  email    String  @unique
+  id       String  @id
+  name     String?
+  password String
+  username String
+}
