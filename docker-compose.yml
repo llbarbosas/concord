@@ -1,25 +1,26 @@
 version: '3.1'
 
 services:
-    app:
-        build: .
+    web: 
+        build: concord-web
+        ports:
+            - 80:80
+
+    api:
+        build: concord-api
+        env_file: concord-api/.env
         ports:
             - 3000:3000
-        env_file: .env
-        environment:
-        - APP_HOST=$APP_HOST
-        - APP_PORT=$APP_PORT
-        - POSTGRES_HOST=$POSTGRES_HOST
-        - POSTGRES_USER=$POSTGRES_USER
-        - POSTGRES_PASSWORD=$POSTGRES_PASSWORD
-        - POSTGRES_DATABASE=$POSTGRES_DATABASE
+
+    chat: 
+        build: concord-chat
+        ports:
+            - 3030:3030
 
     db:
         image: postgres
         restart: always
-        env_file: .env
-        environment:
-            POSTGRES_PASSWORD: $POSTGRES_PASSWORD
+        env_file: concord-api/.env
         volumes:
             - pgdata:/var/lib/postgresql/data
         ports:
@@ -30,10 +31,7 @@ services:
         restart: always
         ports:
             - 8080:80
-        env_file: .env
-        environment:
-            PGADMIN_DEFAULT_EMAIL: $PGADMIN_DEFAULT_EMAIL
-            PGADMIN_DEFAULT_PASSWORD: $PGADMIN_DEFAULT_PASSWORD
+        env_file: concord-api/.env
 
 volumes:
     pgdata: {}

@@ -1,0 +1,30 @@
+{
+  "name": "concord-server",
+  "version": "1.1.0",
+  "scripts": {
+    "start": "NODE_ENV=prod node src",
+    "dev": "NODE_ENV=dev nodemon src",
+    "test": "jest"
+  },
+  "author": "llbarbosas",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "2.0.0-beta.5",
+    "bcrypt": "^4.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "peer": "^0.5.3",
+    "pg": "^8.2.1",
+    "redux": "^4.0.5",
+    "socket.io": "^2.3.0",
+    "uuid": "^8.0.0"
+  },
+  "devDependencies": {
+    "@prisma/cli": "^2.0.0-beta.6",
+    "jest": "^26.0.1",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
+  }
+}

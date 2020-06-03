@@ -1,0 +1,21 @@
+{
+  "name": "concord-chat",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npx tsc",
+    "dev": "npx tsc -w & node build",
+    "start": "node build"
+  },
+  "author": "llbarbosas",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.5",
+    "@types/socket.io": "^2.1.8",
+    "typescript": "^3.9.3"
+  }
+}
